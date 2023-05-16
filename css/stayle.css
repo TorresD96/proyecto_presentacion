@@ -1,0 +1,279 @@
+/*Comentario*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body{
+
+    width: 100vw;
+    font-family:'Times New Roman', Times, serif;
+
+}
+
+/* Header*/
+
+.header__container{
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: auto;
+background-color:#2093cc00;
+box-shadow: 0 4px 5px rgba(0, 0, 0, 0.421);
+border: none;
+text-align: center;
+z-index: 2;
+}
+
+.header__container ul{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    line-height: 50px;
+    list-style: none;
+
+}
+
+.header__container ul li a{
+    text-decoration: none;
+    color:black;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 900;
+    transition: all 0.4s;
+
+}
+
+.header__container ul li a:hover{
+color:#04e844;
+font-size: 18px;
+}
+.header__container ul li .container__logo{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 10px;
+    width: 150px;
+
+}
+
+/*banner*/
+
+.banner{
+height: 70vh;
+display: grid;
+place-items:center ;
+text-align: center;
+background-image: url(../img/reparacion.png);
+background-color: white;
+background-size: cover;
+background-position: center center;/* posiciona las letras en el centro de l imagen y la imagen se centra siempre*/
+position: relative;
+
+}
+.banner__text{
+    z-index: 2;
+}
+
+.banner::before{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(69, 44, 44, 0.5);
+}
+
+.banner__text h1{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color:white;
+    font-size: 40px;
+
+}
+.banner__text p{
+    color:rgb(186, 163, 232);
+    font-weight: 900;
+    font-size: 20px;
+    margin-top: 50px;
+}
+
+/* about */
+
+.about{
+padding: 20px;
+display: flex;
+flex-direction:column;
+text-align: center;
+
+}
+/*separacion */
+.section-header{
+    margin-bottom: 40px;
+}
+.section-header h2{
+    font-size: 40px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+}
+.section-header p{
+    padding-top: 20px;
+    width: 40%;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 1.9;
+}
+
+/*servicios */
+
+.service{
+    padding: 40px;
+}
+
+.service-content{
+
+    display:flex;
+    text-align: center;
+    justify-content:space-around;
+    margin: auto;
+
+}
+.single-service img{
+display: grid;
+text-align: center;
+margin:auto;
+padding: 20px;
+width: 300px;
+height: 200px;
+justify-content: center;
+align-items: center;
+}
+.service-content P{
+    font-size: 25px;
+    text-align: center;
+
+}
+/* contact */
+
+.contact{
+    padding: 60px 0;
+}
+.single-contact{
+
+    display: flex;
+    flex-direction:column;
+    margin:auto;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact p{
+    font-size: 25px;
+}
+.single-contact input{
+width: 70%;
+height: 40px;
+margin: 7px;
+border: none;
+border-bottom:3px solid rgb(99, 99, 110) ;
+}
+.single-contact textarea{
+    width: 70%;
+    height: 100px;
+    margin: 7px;
+    border: none;
+    border-bottom:3px solid blue ;
+    }
+
+.single-contact input:last-child{
+        width: 70%;
+        height: 40px;
+        margin: 7px;
+        border: none;
+        background-color: #04e844;
+        color: black;
+    }
+    .single-contact input:last-child:hover{
+background-color: #0789cb;
+    }
+footer{
+    background-color: #0789cb;
+
+    color: aliceblue;
+    line-height: 3;
+    text-align: center;
+}
+footer img{
+    margin:auto;
+    padding: 20px;
+    width: 200px;
+    height: 100px;
+    align-items: normal;
+    justify-content:left;
+}
+
+@media screen and (max-width: 620px) {
+
+    .header__container ul li a{
+        text-decoration: none;
+        color:blueviolet;
+        font-size: 16px;
+        text-transform: uppercase;
+        font-weight: 900;
+        transition: all 0.4s;
+    
+    }
+    
+    
+        .abrir-menu,
+        .cerrar-menu {
+            display: block;
+            border: 0;
+            font-size: 1.25rem;
+            background-color: transparent;
+            cursor: pointer;
+        }
+    
+        .abrir-menu {
+            color: #1c1c1c;
+        }
+    
+        .cerrar-menu {
+            color: #ececec;
+        }
+    
+        .nav {
+            width:220px;
+            opacity: 0;
+            visibility: hidden;
+            display: flex;
+            flex-direction: column;
+            align-items: end;
+            gap: 1rem;
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #1c1c1c;
+            padding: 2rem;
+            box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
+        }
+    
+        .nav.visible {
+            opacity: 1;
+            visibility: visible;
+        }
+        
+        .nav-list {
+            flex-direction: column;
+            align-items: end;
+        }
+    
+        .nav-list li a {
+            color: #ecececec;
+        }
+    }
+    
