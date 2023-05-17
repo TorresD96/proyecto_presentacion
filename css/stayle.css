@@ -168,7 +168,9 @@ height: 200px;
 box-sizing:content-box;
 justify-content:space-between;
 align-items:center;
+border-radius: 80%;
 }
+
 .single-service1 h2{
     text-align: center;
     padding: 20px;
