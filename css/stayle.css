@@ -16,45 +16,48 @@ body{
 /* Header*/
 
 .header__container{
-padding: 20px;
-position:static;
+position:fixed;
 top: 0;
 left: 0;
 width: 100%;
 height: 60px;
-background-color:#77b2cfbd;
+background-color:#77b2cf;
 box-shadow: 0 4px 5px rgba(0, 0, 0, 0.421);
 border: none;
 text-align: center;
 z-index: 2;
-}
 
-.header__container ul{
+}
+.header__container ul li a:hover{
+    color: #1071cb;
+    font-size: 18px;
+}
+.header__container ul {
     display: flex;
     justify-content: center;
     gap: 30px;
-    line-height: 10px;
+    line-height: 60px;
     list-style: none;
-
 }
+.header__container ul li a:hover{
+    color: #1071cb;
+    font-size: 18px;
+}
+
 
 .header__container ul li a{
     text-decoration: none;
     color:black;
     font-size: 16px;
     text-transform: uppercase;
-    font-weight: 900;
-    transition: all 0.4s;
+    font-weight:900;
+    transition: all 0.2s;
     text-align: center;
 
 }
 
-.header__container ul li a:hover{
-color:#94f7b0;
-font-size: 18px;
-}
 .header__container ul li .container__logo{
-    padding: 2px;
+    padding: 10px;
     position:fixed;
     top:0;
     left: 0;
@@ -66,7 +69,7 @@ font-size: 18px;
 /*banner*/
 
 .banner{
-height: 70vh;
+height: 100vh;
 display: grid;
 place-items:center ;
 text-align: center;
@@ -78,7 +81,7 @@ position: relative;
 
 }
 .banner__text{
-    z-index: 2;
+    z-index: 1;
 }
 
 .banner::before{
@@ -90,32 +93,48 @@ position: relative;
     height: 100%;
     background-color: rgba(69, 44, 44, 0.5);
 }
-
 .banner__text h1{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color:rgb(246, 98, 125);
+    font-size: 45px;
+}
+.banner__text h2{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 20px;
     color:white;
-    font-size: 40px;
+    font-size: 30px;
 
 }
 .banner__text p{
-    color:rgb(186, 163, 232);
-    font-weight: 900;
+    color:#87f9f3;
+    padding: 60px;
+    font-size: 25px;
+}
+
+/*histoira*/
+.Historia{
+    padding-top: 30px;
+    background-color: rgb(178, 236, 240);
+}
+.Historia h2{
+    font-size: 45px;
+    font-family: cursive;
+    text-align: center;
+}
+.Historia p{
+    text-align: center;
+    padding: 20px;
     font-size: 20px;
-    margin-top: 50px;
+    font-family:monospace;
 }
 
-/* about */
 
-.about{
-padding: 20px;
-display: flex;
-flex-direction:column;
-text-align: center;
-
-}
 /*separacion */
 .section-header{
     margin-bottom: 40px;
+}
+section{
+    background-color: rgb(178, 236, 240);
 }
 .section-header h2{
     font-size: 40px;
@@ -123,48 +142,56 @@ text-align: center;
     text-align: center;
     text-transform: uppercase;
 }
-.section-header p{
-    padding-top: 20px;
-    width: 40%;
-    margin: 0 auto;
-    text-align: center;
-    line-height: 1.9;
-}
-
 /*servicios */
 
-.service{
+.contact{
     padding: 40px;
+    display:grid;
 }
 
-.service-content{
+.service-content2{
 
     display:flex;
     text-align: center;
     justify-content:space-around;
     margin: auto;
+    list-style: none;
 
 }
-.single-service img{
-display: grid;
+.single-service1 img{
+display: inline-block;
 text-align: center;
 margin:auto;
-padding: 20px;
-width: 300px;
-height: 200px;
-justify-content: center;
-align-items: center;
+padding: 10px;
+max-width: 30vmax;
+height: 200px; 
+box-sizing:content-box;
+justify-content:space-between;
+align-items:center;
 }
-.service-content P{
-    font-size: 25px;
+.single-service1 h2{
     text-align: center;
-
+    padding: 20px;
 }
-/* contact */
+.single-service1 h2:hover{
+    color: #150c8e;
+    font-size: 20px;
+}
+
+.single-service1 p{
+    font-size: 18px;
+    text-align:left;
+    padding: 10px;
+    
+}
+.single-service1 .nav-list1 li{
+    margin-left: 70px;
+}
+  /* contact */
 
 .contact{
     padding: 60px 0;
-   
+    text-align: center;
 }
 .single-contact{
 
@@ -176,75 +203,224 @@ align-items: center;
     align-items: center;
     
 }
-
-.contact p{
+.section-header3 h2{
+    font-size: 40px;
+}
+.section-header3 p{
+    padding: 20px;
     font-size: 25px;
+    gap: 30px;
+    text-align: center;
 }
 .single-contact input{
-width: 70%;
-height: 40px;
-margin: 7px;
-border: none;
-border-bottom:3px solid rgb(99, 99, 110) ;
-}
-.single-contact textarea{
-    width: 70%;
-    height: 100px;
+    width: 45%;
+    height: 40px;
     margin: 7px;
     border: none;
-    border-bottom:3px solid blue ;
+    border-bottom:3px solid rgb(99, 99, 110) ;
+}
+.single-contact textarea{
+    width: 40%;
+    height: 200px;
+    margin: 7px;
+    border: none;
+    border-bottom:3px solid  rgb(99, 99, 110) ;
     }
 
 .single-contact input:last-child{
-        width: 70%;
+        width: 20%;
         height: 40px;
         margin: 7px;
         border: none;
         background-color: #04e844;
         color: black;
     }
-    .single-contact input:last-child:hover{
-background-color: #0789cb;
+.single-contact input:last-child:hover{
+background-color: #e31d6f;
+    }
+
+    /*comentario*/
+    .contact4{
+        padding: 60px ;
+        text-align: center;
+    }
+.single-contact4{
+        display: flex;
+        padding: 30px;
+        flex-direction:row;
+        margin:auto;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        
+    }
+.section-header4 h2{
+        font-size: 30px;
+        padding-bottom: 30px;
+    }
+.section-header3 p{
+        padding: 10px;
+        font-size: 30px;
+        text-align: center;
+    }
+.single-contact4 input{
+        width: 35%;
+        height: 40px;
+        margin: 10px;
+        /* border: none; */
+        border-bottom:3px solid rgb(99, 99, 110) ;
+    }
+.single-contact4 textarea{
+        width: 40%;
+        height: 40px;
+        margin: 7px;
+        border: none;
+        border-bottom:3px solid  rgb(99, 99, 110) ;
+        }
+    
+.single-contact4 input:last-child{
+        width: 8%;
+        height: 40px;
+        margin: 7px;
+        border: none;
+        background-color: #04e844;
+        color: black;
+        } 
+.single-contact4 input:last-child:hover{
+        background-color: #9717d2;
     }
 footer{
-    background-color: #0789cb;
-
+    background-color: #2e9fd7;
     color: aliceblue;
-    line-height: 3;
-    text-align: center;
-}
-footer img{
-    margin:auto;
-    padding: 20px;
-    width: 200px;
-    height: 100px;
-    align-items: normal;
-    justify-content:left;
+    height: 145px;
+    text-transform:capitalize;
 }
 
-@media screen and (max-width: 620px) {
+footer .container__logo2{
+    width: 150px;
+;
+}
+footer .container__social{
+    padding: 15px;
+    width: 80px;
+    height: 60px;
+    justify-content:right;
+    
+}
+
+
+
+@media screen and (max-width: 700px) {
 
     .header__container{
-        background-color: #dd7045;
+        background-color: #c69af3;
         border: none;
+        height: 50px;
         text-align: center;
         z-index: 2;
     }
-    .header__container ul li .container__logo{
-        padding: 0;
-        position:sticky;
-        top:0;
-        left:0;
-        width: 150px;
-        justify-content: center;
+    .header__container ul li a{
+        text-decoration: none;
+        color:black;
+        font-size: 12px;
+        text-transform: uppercase;
+        font-weight: 600;
+        transition: all 0.2s;
+        text-align: center;
+    
+    }
+    .banner{
+            height: 90vh;
+            display: grid;
+            place-items:center ;
+            text-align: center;
+            background-image: url(../img/reparacion.png);
+            background-color: white;
+            background-size: cover;
+            background-position: center center;/* posiciona las letras en el centro de l imagen y la imagen se centra siempre*/
+            position: relative;
+        }
+        .banner::before{
+            position: absolute;
+            content: "";
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(24, 23, 23, 0.5);
+        }
+        .banner__text h1{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color:rgb(246, 98, 125);
+            margin-top: 70px;
+            font-size: 30px;
+            gap: 20px;
+        }
+        .banner__text h2{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color:white;
+            font-size: 20px;
         
-    }
-    .contact{
+        }
+        .banner__text p{
+            color:rgb(191, 42, 237);
+            font-weight: 900;
+            font-size: 20px;
+            margin: 1px;
+            z-index:1;
+        }
+        .Historia{
+            background-color: #a39eed;
+        }
+        .Historia h2{
+            font-size: 36px;
+            font-family: cursive;
+            text-align: center;
+        }
+        .Historia p{
+            text-align: center;
+            padding: 16px;
+            font-size: 20px;
+        }
+    /*nuestrso servicios*/
+        section{
+            background-color: #a39eed;
+            color:white;
+        }
+    
+        .section-header h2{
+            text-align:center;
+            justify-content: center;
+            font-size: 35px;
+        }
+        .service-content2{
+            display: flexbox;
+            flex-direction: column;
+        }
+        .single-service1 img{
+            display:flex;
+            text-align: center;
+            padding: 10px;
+            max-width: 200vmax;
+            height: 200px; 
+            justify-content:space-between;
+            align-items:center;
+            }
+            .single-service1 h2{
+                text-align: center;
+                padding: 10px;
+            }
+            .single-service1 p{
+                font-size: 18px;
+                text-align:center;
+                padding: 10px;
+                
+            }
+            .single-service1 .nav-list1 li{
+                list-style: none;
+                margin-left:auto;
+            }
 
-        background-color: #3c6174bd;
-        z-index: 1;
-        color:aliceblue;
-    }
     /* .abrir-menu
     .cerrar-menu {
        width: 30px;
