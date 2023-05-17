@@ -114,7 +114,7 @@ position: relative;
 /*histoira*/
 .Historia{
     padding-top: 30px;
-    background-color: rgb(178, 236, 240);
+    background-color: #b5e3e6;
 }
 .Historia h2{
     font-size: 45px;
@@ -134,7 +134,7 @@ position: relative;
     margin-bottom: 40px;
 }
 section{
-    background-color: rgb(178, 236, 240);
+    background-color: #b5e3e6;
 }
 .section-header h2{
     font-size: 40px;
