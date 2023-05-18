@@ -16,16 +16,16 @@ body{
 /* Header*/
 
 .header__container{
-position:fixed;
-top: 0;
-left: 0;
-width: 100%;
-height: 60px;
-background-color:#77b2cf;
-box-shadow: 0 4px 5px rgba(0, 0, 0, 0.421);
-border: none;
-text-align: center;
-z-index: 2;
+    position:fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background-color:#77b2cf;
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.421);
+    border: none;
+    text-align: center;
+    z-index: 2;
 
 }
 .header__container ul li a:hover{
@@ -63,7 +63,7 @@ z-index: 2;
     left: 0;
     width: 150px;
     justify-content: center;
-
+    border-radius: 70%;
 }
 
 /*banner*/
@@ -111,7 +111,7 @@ position: relative;
     font-size: 25px;
 }
 
-/*histoira*/
+/*historia*/
 .Historia{
     padding-top: 30px;
     background-color: #b5e3e6;
@@ -128,11 +128,6 @@ position: relative;
     font-family:monospace;
 }
 
-
-/*separacion */
-.section-header{
-    margin-bottom: 40px;
-}
 section{
     background-color: #b5e3e6;
 }
@@ -169,6 +164,10 @@ box-sizing:content-box;
 justify-content:space-between;
 align-items:center;
 border-radius: 80%;
+}
+.single-service1 img:hover{
+    filter: brightness(70%);
+    background-color:#4cc3d5;
 }
 
 .single-service1 h2{
@@ -227,6 +226,7 @@ border-radius: 80%;
     margin: 7px;
     border: none;
     border-bottom:3px solid  rgb(99, 99, 110) ;
+    border-bottom-right-radius: 15%;
     }
 
 .single-contact input:last-child{
@@ -239,6 +239,7 @@ border-radius: 80%;
     }
 .single-contact input:last-child:hover{
 background-color: #e31d6f;
+
     }
 
     /*comentario*/
@@ -266,18 +267,19 @@ background-color: #e31d6f;
         text-align: center;
     }
 .single-contact4 input{
-        width: 35%;
+        width: 20%;
         height: 40px;
         margin: 10px;
-        /* border: none; */
-        border-bottom:3px solid rgb(99, 99, 110) ;
-    }
+}
+
 .single-contact4 textarea{
-        width: 40%;
-        height: 40px;
+        width: 30%;
+        height: 50px;
         margin: 7px;
         border: none;
         border-bottom:3px solid  rgb(99, 99, 110) ;
+        border-bottom-right-radius: 15%;
+    
         }
     
 .single-contact4 input:last-child{
@@ -300,7 +302,7 @@ footer{
 
 footer .container__logo2{
     width: 150px;
-;
+    border-radius: 70%;
 }
 footer .container__social{
     padding: 15px;
@@ -309,7 +311,6 @@ footer .container__social{
     justify-content:right;
     
 }
-
 
 
 @media screen and (max-width: 700px) {
@@ -384,7 +385,7 @@ footer .container__social{
             padding: 16px;
             font-size: 20px;
         }
-    /*nuestrso servicios*/
+    /*nuestros servicios*/
         section{
             background-color: #a39eed;
             color:white;
@@ -423,6 +424,28 @@ footer .container__social{
                 margin-left:auto;
             }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            
     /* .abrir-menu
     .cerrar-menu {
        width: 30px;
